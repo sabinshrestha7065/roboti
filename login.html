@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Facebook login page</title>
+    <style>
+        .container {
+            vertical-align: top;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 800px;
+            height: 500px;
+
+        }
+
+        .facebook {
+            justify-content: start;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 0px;
+            color: blue;
+            outline: none;
+            display: flex;
+        }
+
+        .text-p {
+            display: flex;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .email {
+            flex-direction: column;
+            display: flex;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            height: 250px;
+            width: 400px;
+        }
+
+        .email-text {
+            border: 1px;
+            text-align: center;
+            height: 30px;
+            margin: 10px;
+
+
+        }
+
+        .text {
+            width: 330px;
+        }
+
+        .log-in {
+            background-color: rgb(86, 86, 219);
+            color: white;
+            text-align: center;
+            height: 30px;
+            margin: 10px;
+            cursor: pointer;
+            border: 1px solid grey;
+
+        }
+
+        .forgot {
+            color: blue;
+            padding-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .new {
+            display: block;
+            border: 1px solid #e0e0e0;
+            background-color: green;
+            border-radius: 4px;
+            height: 30px;
+            width: 160px;
+            margin-left: 120px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="container">
+        <div class="facebook">
+            <h1 class="title">facebook</h1>
+            <p class="text-p"> <strong> Connect with friends and the word<br> around you on facebook.</strong></p>
+        </div>
+        <div class="email">
+            <input type="text" placeholder="Email or phone Number" class="email-text">
+            <input type="text" placeholder="password" class="email-text">
+            <input type="text" placeholder="Log in" class="log-in">
+            <div class="forgot">Forget password?</div>
+            <div class="new">Create New Account</div>
+        </div>
+        </div>
+    </button>
+</body>
+
+</html>

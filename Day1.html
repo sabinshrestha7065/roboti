@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>assignment</title>
+    <style>
+        .alert {
+            padding: 10px;
+            position: relative;
+            color: blue;
+            background-color: #cce5ff;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            border-color: #b2d3f7;
+        }
+
+        .nav-container {
+            display: flex;
+
+        }
+
+        .btn-primary {
+            margin: 0px;
+            padding: 0px;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            height: 45px;
+            width: 150px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: blue;
+        }
+
+        .btn-secondary {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-secondar:hover {
+            background-color: grey;
+        }
+
+        .btn-success {
+            color: white;
+            background-color: #28a745;
+            border-color: #28a745;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-success:hover {
+            background-color: green;
+        }
+
+        .btn-danger {
+            color: white;
+            background-color: #dc3545;
+            border-color: #dc3545;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-danger:hover {
+            background-color: red;
+        }
+
+        .btn-warning {
+            color: #212529;
+            background-color: #ffc107;
+            border-color: #ffc107;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-warning:hover {
+            background-color: yellow;
+        }
+
+        .btn-info {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-info:hover {
+            background-color: blue;
+        }
+
+        .btn-light {
+            color: #212529;
+            background-color: #f8f9fa;
+            border-color: #f8f9fa;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-light:hover {
+            background-color: #fff;
+
+        }
+
+        .btn-dark {
+            color: #fff;
+            background-color: #343a40;
+            border-color: #343a40;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-dark:hover {
+            background-color: black;
+        }
+
+        .btn-primary-g {
+            align-items: center;
+            color: #007bff;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: #007bff;
+        }
+
+        .btn-primary-g:hover {
+            border-color: #007bff;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-secondary-g {
+            align-items: center;
+            color: #6c757d;
+            background-color: #fff;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: #6c757d;
+        }
+
+        .btn-secondar-g:hover {
+            background-color: #6c757d;
+
+        }
+
+        .btn-success-g {
+            align-items: center;
+            color: #28a745;
+            background-color: white;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: #28a745;
+        }
+
+        .bth-success-g:hover {
+            background-color: green;
+        }
+
+        .btn-danger-g {
+            text-align: center;
+            color: #dc3545;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: rgb(108, 108, 204);
+            overflow: visible;
+            text-transform: none;
+        }
+
+        .btn-danger:hover {
+            background-color: red;
+        }
+
+        .btn-info-g {
+            align-items: center;
+            color: #17a2b8;
+            background-color: #fff;
+            border-color: #17a2b8;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: .25rem;
+            cursor: pointer;
+            overflow: visible;
+            text-transform: none;
+        }
+
+        .btn-info-g:hover {
+            background-color: blue;
+        }
+
+        .btn-warning-g {
+            align-items: center;
+            color: #ffc107;
+            background-color: white;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: .25rem;
+            cursor: pointer;
+            border-color: #ffc107;
+        }
+
+        .btn-warning-g:hover {
+            background-color: yellow;
+        }
+
+        .btn-dark-g {
+            align-items: center;
+            color: white;
+            height: 45px;
+            width: 150px;
+            padding: 0px;
+            margin: 0px;
+            border-radius: .25rem;
+            cursor: pointer;
+            border-color: #343a40;
+            color: #343a40;
+        }
+
+        .btn-dark-g:hover {
+            background-color: black;
+        }
+
+        .btn-Large-h {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: 400;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .btn-Large-i {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            border: 1px solid transparent;
+            color: #fff;
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: 400;
+            border-radius: 5px;
+            font-size: 18px;
+            user-select: none;
+            display: inline-block;
+        }
+
+        .btn-Small-h {
+            background-color: #007bff;
+            border-color: #007bff;
+            border: 1px solid transparent;
+            color: #fff;
+            padding: .25rem .5rem;
+            height: 30px;
+            width: 100px;
+            margin: 5px;
+            padding: 0px;
+            cursor: pointer;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: 400;
+            border-radius: .2rem;
+            line-height: 1.5;
+            font-size: .875rem;
+            user-select: none;
+            display: inline-block;
+        }
+
+        .btn-Samll-i {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            border: 1px solid transparent;
+            color: #fff;
+            padding: .25rem .5rem;
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: 400;
+            border-radius: .2rem;
+            line-height: 1.5;
+            font-size: .875rem;
+            user-select: none;
+            display: inline-block;
+        }
+
+        .btn-block-1 {
+            width: 100%;
+            padding: .5rem 1rem;
+            line-height: 1.5;
+            border-radius: .3rem;
+            font-size: 1.25rem;
+            cursor: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            text-align: center;
+            user-select: none;
+            overflow: visible;
+            margin: 0;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .btn-block-2 {
+            display: block;
+            width: 100%;
+            padding: .5rem 1rem;
+            line-height: 1.5;
+            border-radius: .3rem;
+            font-size: 1.25rem;
+            cursor: #fff;
+            border-color: #6c757d;
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+            user-select: none;
+            overflow: visible;
+            margin: 0;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .cards {
+            width: 286px;
+            height: 180px;
+            vertical-align: middle;
+            border-style: none;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            background-color: black;
+            background-clip: border-box;
+
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .card title {
+            height: 180px;
+            width: 286px;
+            margin: .75rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 4px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+            text-align: left;
+            border-style: none;
+        }
+
+        .card-header {
+            border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+            padding: .75rem 1.25rem;
+            margin-bottom: 0;
+            background-color: rgba(0, 0, 0, .03);
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+            box-sizing: border-box;
+            display: block;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: #495057;
+            border-radius: .25rem;
+
+        }
+
+        .input {
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            text-align: start;
+            appearance: auto;
+            cursor: text;
+            font: 400 13.3333px Arial;
+        }
+
+        .form-control-lg {
+            height: calc(1.5em + 1rem + 2px);
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: .3rem;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+        }
+
+        .form-label {
+            display: inline;
+            margin-bottom: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Alerts</h2>
+    <div class="nav-container"></div>
+    <div class="alert">This is primary alert-check it out!</div>
+
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Button primary</button>
+    <button class="btn btn-secondary">Button secondary</button>
+    <button class="btn btn-success"> Button success</button>
+    <button class="btn btn-danger"> Button danger</button>
+    <button class="btn btn-warning"> Button warning</button>
+    <button class="btn btn-info"> Button info</button>
+    <button class="btn btn-light"> Button light</button>
+    <button class="btn btn-dark"> Button dark</button>
+
+    <h2>Button Outline</h2>
+
+    <button class="btn btn-primary-g"> Button primary</button>
+    <button class="btn btn-secondary-g"> Button secondary</button>
+    <button class="btn btn-success-g"> Button success</button>
+    <button class="btn btn-danger-g"> Button danger</button>
+    <button class="btn btn-info-g"> Button info</button>
+    <button class="btn btn-warning-g"> Button warning</button>
+    <button class="btn btn-dark-g"> Button dark</button>
+
+    <h2>Button Size</h2>
+    <button class="btn btn-Large-h">Large button</button>
+    <button class="btn btn-Large-i">Large button</button>
+    <br>
+    <button class="btn btn-Small-h">Small button</button>
+    <button class="btn btn-Samll-i">Small button</button>
+
+    <h2>Buttons Block</h2>
+    <div class="btn btn-block-1">Block level button</div>
+    <br>
+    <div class="btn btn-block-2">Block level button</div>
+
+    <h2>Cards</h2>
+    <button class="cards">286*180</button>
+
+    <div class="card title">
+        <h3>Cards Title</h3>
+        <div class="card-text">Some quick example text to build<br> on the card title and make up <br>the bulk of the
+            cards
+            content.</div>
+        <button type="button" class="btn btn-primary">Go somewhere</button>
+    </div>
+    <h2>Feature Cards</h2>
+    <div class="card">
+        <div class="card-header">Featured</div>
+        <div class="card-title h5">
+            <h3>Special title treatment</h3>
+        </div>
+        <p class="card-text">With supporting text below as a natural lead-in to additional <br>content.</p>
+        <button type="button" class="btn btn-primary">Go somewhere</button>
+    </div>
+    <h3>Login form</h3>
+    <div class="form-group">
+        <label class="form-label" for="formbasicEmail">Email address</label>
+        <input placeholder="Enter email" type="email" id="formBasicEmail" class="form-control">
+        <small class="text-muted form-text">We will never share your email with anyone else.</small>
+
+        <label class="form-label" for="formbasicpassword"><br>password</label>
+        <input type="password" placeholder="password" id="formbasicpassword" class="form-control">
+        <input type="checkbox" id="formbasiccheckbox" class="form-check-input">
+        <label title for="formbasiccheckbox" class="form-check-label">check me out</label>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <h2 class="mt-4">Forms Size</h2>
+        <input type="text" placeholder="Large text" class="form-control form-control-lg">
+        <br>
+        <input type="text" placeholder="Normal text" class="form-control">
+        <br>
+        <input type="text" placeholder="Samll text" class="form-control form-control-sm">
+    </div>
+
+    </div>
+    </form>
+</body>
+
+</html>

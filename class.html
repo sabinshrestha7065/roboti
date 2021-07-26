@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-dribble</title>
+    <style>
+        .nav {
+            display: flex;
+        }
+
+        .container {
+            flex-direction: none;
+            cursor: pointer;
+        }
+
+        .head {
+            cursor: pointer;
+        }
+
+        .menu {
+            display: none;
+            width: 440px;
+            height: 440px;
+            padding: 16px 0;
+            border-radius: 12px;
+            border: 1px solid;
+            cursor: pointer;
+            display: flex;
+            font-size: 100%;
+        }
+
+        .list {
+            margin: 26px;
+            padding: 16px 18px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+            margin-top: 10px;
+        }
+
+        .card-heading {
+            font-weight: bold;
+            display: flex;
+            gap: 10px;
+            margin: 1px;
+        }
+
+        .card-body {
+            gap: 10px;
+            color: gray;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .inspiration-list {
+            font-family: "Haas Grot Text R ", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 20px;
+            padding: 8px;
+            background-color: rgb(185, 180, 180);
+        }
+
+        .inspiration-list-title {
+            display: flex;
+            padding: 2px;
+        }
+
+        .title {
+            display: flex;
+            font-weight: bold;
+        }
+
+        .inspiration-list ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .inspiration-list ul li {
+            display: flex;
+            margin: 3px;
+        }
+
+        .nav-container {
+            margin-left: 30px;
+            flex-direction: none;
+        }
+
+        .menu-1 {
+            display: none;
+        }
+
+        .box-1 {
+            width: 200px;
+            height: 200px;
+            background: transparent;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-left: 10px;
+            border-color: black;
+            vertical-align: baseline;
+        }
+
+        .nav-container:hover .menu-1 {
+            position: relative;
+            display: block;
+        }
+
+        .nav-container-2 {
+            margin-left: 40px;
+        }
+        .box-3{
+            height: 230px;
+            width: 230px;
+            background: transparent;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-left: 10px;
+            border-color: black;
+            vertical-align: baseline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="container">
+            <h4>Inspiration</h4>
+            <div class="menu">
+                <div class="list">
+                    <div class="card-heading">Explore Design work</div>
+                    <div class="card-body">Trending designgs to inspire you</div>
+                    <div class="card-heading">New & Notewortty</div>
+                    <div class="card-body">Up-and-coming designers</div>
+                    <div class="card-heading">Playoffs</div>
+                    <div class="card-body">Work designers are riffing on</div>
+                    <div class="card-heading">Blog</div>
+                    <div class="card-body">interviws, tutorials, and more</div>
+                    <div class="card-heading">Weekly Warm-up</div>
+                    <div class="card-body">promnt to flex your design skills</div>
+                </div>
+                <div class="inspiration-list">
+                    <ul>
+                        <li class="title">Browswe categories</li>
+                        <li>Animation</li>
+                        <li>Branding</li>
+                        <li>Illusstration</li>
+                        <li>Mobile</li>
+                        <li>print</li>
+                        <li>Product Design</li>
+                        <li>Typography</li>
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <h4>Find Work</h4>
+            <div class="menu-1">
+                <div class="box-1">
+                    <div class="card-heading">Job Board</div>
+                    <div class="card-body">Find your dream design job </div>
+                    <div class="card-heading">Freelance projects</div>
+                    <div class="card-body">An exclusive list for contract Work</div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container-2">
+            <h4>Learn Design</h4>
+        </div>
+        <div class="nav-container-2">
+            <h4>Go Pro</h4>
+        </div>
+        <div class="nav-container">
+            <h4>Hire designers</h4>
+            <div class="menu-1">
+                <div class="box-3">
+                    <div class="card-heading">Designer search</div>
+                    <div class="card-body">Find, contact, and hire designers </div>
+                    <div class="card-heading">List my job opening</div>
+                    <div class="card-body">The#1 job board for creative</div>
+                    <div class="card-heading">Post of Freelance project</div>
+                    <div class="card-body">Board for Freelance & contract work</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

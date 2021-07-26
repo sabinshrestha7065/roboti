@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page Design</title>
+    <link rel="stylesheet" type="text/css" href="atyle.css">
+    <style>
+        .main {
+            display: flex;
+        }
+
+        .nav-left {
+            display: flex;
+            position: relative;
+            width: 100%;
+            color: black;
+            padding: 10px;
+        }
+
+        .nav-right {
+            flex-direction: row;
+            display: flex;
+            position: relative;
+            width: 100%;
+            color: black;
+            gap: 45px;
+            padding: 10px;
+        }
+
+        .text h4 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 3.6rem;
+            line-height: 1.2;
+            font-style: normal;
+            font-weight: 700;
+            text-align: left;
+            padding: 60px;
+            border: 50px;
+            margin: 20px;
+            padding-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 0ch 1.2em;
+            ;
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.5;
+            font-style: normal;
+            text-align: left;
+            font-weight: 400;
+            color: #181818;
+            margin: 20px;
+            padding: 60px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            padding-left: 60px;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            padding-left: 60px;
+            gap: 10px;
+            height: 60px;
+        }
+
+        .btn-primary {
+            align-items: flex-start;
+            justify-content: center;
+            font-weight: 900;
+            margin: 0px;
+            padding: 0px;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            height: 45px;
+            width: 140px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        .email {
+            flex-direction: column;
+            display: flex;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            height: 250px;
+            width: 400px;
+            gap: 30px;
+        }
+
+        .logo:hover .menu {
+            position: relative;
+            display: flex;
+        }
+
+        .head {
+            justify-content: center;
+        }
+        .box .head {
+            text-align: center;
+        }
+        .head p{
+            align-items: center;
+        }
+        .email-text {
+            border: 1px;
+            text-align: center;
+            height: 30px;
+            margin: 10px;
+            box-shadow: 1px 1px 1px 1px ;
+        }
+        .text{
+            width: 330px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-left">
+            <div class="logo">PetsM4</div>
+        </div>
+        <div class="nav-right">
+            <div class="logo">Home</div>
+            <div class="logo">Live Demo</div>
+            <div class="logo">Live Demo Blocks</div>
+            <div class="logo">BUY NOW</div>
+            <div class="logo">
+                <h4> Contact us</h4>
+                <div class="menu">
+                    <div class="box">
+                        <div class="head">CONTACT US</div>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum esse at iure velit enim
+                            porro error dolor suscipit hic asperiores? Libero dolorem id aliquam, aspernatur illum iusto
+                            nesciunt amet odio?</P>
+                        <div class="email">
+                            <input type="text" placeholder="Email or phone Number" class="email-text">
+                            <input type="text" placeholder="password" class="email-text">
+                            <input type="text" placeholder="inquiry for sales" class="email-text">
+                            <input type="text" placeholder="message" class="email-text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <h4>Pets Training<br> school</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Debitis laudantium quod quis libero quo
+            corporis, laborum <br> perferendis est doloremque dolor molestiae, porro<br> doloribus cupiditate.
+            Reiciendis ratione libero error quis!</p>
+    </div>
+    <div class="icon">
+        <img src="gobal.png">
+        <h3 class="icon-1">EAT</h3>
+        <img src="photo.png">
+        <h3 class="icon-1">PHOTO</h3>
+    </div>
+    <div class="btn">
+        <button type="button" class="btn btn-primary">VIEW MORE</button>
+        <button type="button" class="btn btn-primary">BOOK NOW</button>
+    </div>
+    </div>
+</body>
+
+</html>
