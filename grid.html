@@ -5,67 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>flex</title>
     <style>
-        .box-1 {
-            background-color: blue;
-            height: 80px;
-            width: 200px;
-            margin: 2px;
-        }
-
         .one {
-           
-        }
-
-        .two {
-            flex-wrap: wrap;
             display: flex;
-
         }
-
-        .box-2 {
-            background-color: purple;
-            height: 210px;
-            width: 200px;
+        .two{
+            padding: 1px;
+        }
+        .three{
+            padding: 2px;
+        }
+        .box-1 {
+            background-color: aqua;
+            height: 150px;
+            width: 250px;
+            text-align: center;
             margin: 2px;
         }
-
-        .box-3 {
-            height: 327px;
-            width: 260px;
-            background-color: orangered;
-            justify-self: start;
+        .box-5 {
+            background-color: green;
+            height: 150px;
+            width: 250px;
+            text-align: center;
+            margin: 2px;
+        }
+        .box-7 {
+            background-color: rgb(80, 196, 80);
+            height: 150px;
+            width: 250px;
             text-align: center;
             margin: 2px;
         }
 
-        .box-4 {
-            background-color: yellow;
-            height: 80px;
-            width: 200px;
+        .box-2 {
+            background-color: palevioletred;
+            height: 300px;
+            width: 500px;
             margin: 2px;
         }
 
-        .box-6 {
-            background-color: blue;
-            height: 80px;
-            width: 200px;
+        .four {
+            display: flex;
+        }
+
+        .box-8 {
+            background-color: rgb(42, 238, 42);
+            height: 150px;
+            width: 170px;
             margin: 2px;
         }
 
-        .box-10 {
-            background-color: greenyellow;
-            height: 80px;
-            width: 200px;
-            margin: 1px;
+        .box-9 {
+            background-color: rgb(124, 124, 238);
+            height: 150px;
+            width: 330px;
+            margin: 2px;
         }
-
-        .box-12 {
-            background-color: red;
-            height: 80px;
-            width: 200px;
-            margin: 1px;
+        .box-10{
+            background-color: purple;
+            width:180px;
+            margin: 2px;
+        }
+        .five{
+            display: flex;
+            padding: 1px;
         }
     </style>
 </head>
@@ -73,15 +77,20 @@
 <body>
     <div class="one">
         <div class="two">
-            <button class="box-1">1</button>
-            <button class="box-2">2</button>
-            <button class="box-3">CSS Grid layout</button>
-            <button class="box-4">4</button>
-            <button class="box-6">6</button>
-            <button class="box-10">10</button>
-            <button class="box-12">12</button>
+            <div class="box-1">1</div>
+            <div class="box-5">2</div>
+            <div class="box-7">7</div>
         </div>
-    </div>
+        <div class="three">
+            <div class="box-2">2</div>
+            <div class="four">
+                <div class="box-8">8</div>
+                <div class="box-9">9</div>
+            </div>
+        </div>
+        <div class="five">
+            <div class="box-10">10</div>
+        </div>
     </div>
 </body>
 
