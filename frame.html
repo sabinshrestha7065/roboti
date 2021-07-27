@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        .outside {
+            background-color: aqua;
+            height: 700px;
+            width: 100%;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 10px;
+            border: 1px;
+            width: 600px;
+            height: 600px;
+            gap: 150px;
+            box-shadow: 2px 3px 3px 2px;
+            margin-left: 350px;
+        }
+
+        .profile {
+            position: absolute;
+        }
+
+        .circle {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            margin: 40px;
+        }
+
+        .name {
+            font-weight: 900;
+        }
+
+        .job {
+            font-size: medium;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .actions {
+            margin: 40px;
+            display: flex;
+            font-weight: 500;
+        }
+
+        .btn {
+            font-size: 0.5cm;
+            display: flex;
+            height: 40px;
+            width: 180px;
+            border: 2px solid black;
+            margin: 20px;
+            border-radius: 20px;
+            justify-content: center;
+        }
+
+        .box {
+            margin: 12px;
+            height: 190px;
+            width: 200px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <button class="container">
+            <div class="Profile">
+                <div class="image">
+                    <img src="miss nepal.jpg" alt="shrinkhala khatiwada" width="70" height="10" class="circle">
+                </div>
+                <div class="name">shrinkhala khatiwada</div>
+                <div class="job">Model</div>
+                <div class="actions"></div>
+                <div class="btn">Follow</div>
+                <div class="btn">Message</div>
+            </div>
+
+            <div class="stats">
+                <div class="box">
+                    <span class="value">523</span>
+                    <span class="value">posts</span>
+                </div>
+                <div class="box">
+                    <span class="value">1234</span>
+                    <span class="value">Likes</span>
+                </div>
+                <div class="box">
+                    <span class="value">146</span>
+                    <span class="value">Follower</span>
+                </div>
+            </div>
+        </button>
+    </div>
+</body>
+
+</html>
