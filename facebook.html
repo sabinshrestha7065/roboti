@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #efefef;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-self: space-between;
+            background: wheat;
+            padding: 5px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            width: 160px;
+            margin-right: 45px;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            margin-left: 350px;
+        }
+
+        .nav-left ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .nav-left ul li img {
+            width: 28px;
+            margin: 0 15px;
+        }
+
+        .nav-user-icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .nav-user-icon {
+            margin-left: 30px;
+        }
+
+        .search-box {
+            background: #efefef;
+            width: 350px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        .search-box img {
+            width: 18px;
+        }
+
+        .search-box input {
+            width: 100%;
+            background: transparent;
+            padding: 10px;
+            outline: none;
+            border: 0;
+        }
+
+        .online {
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 5%;
+        }
+
+        .left-sidebar {
+            flex-basis: 25%;
+            position: sticky;
+            top: 70px;
+            align-self: flex-start;
+        }
+
+        .right-sidebar {
+            flex-basis: 25%;
+            position: sticky;
+            top: 70px;
+            align-self: flex-start;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            color: #626262;
+        }
+
+        .main-content {
+            width: 47%;
+        }
+
+        .imp-links a,
+        .shortcut-links a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            color: #626262;
+            width: fit-content;
+        }
+
+        .imp-links a img {
+            width: 25px;
+            margin-right: 15px;
+        }
+
+        .imp-links {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .shortcut-links a img {
+            width: 40px;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+
+        .shortcut-links p {
+            margin: 25px 0;
+            color: #626262;
+            font-weight: 500;
+        }
+
+        .sidebar-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        }
+
+        .sidebar-title h4 {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .sidebar-title a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #1876f2;
+        }
+        .event{
+            display: flex;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .left-event{
+            border-radius: 10px;
+            height: 65px;
+            width: 65px;
+            margin-right: 15px;
+            padding-top: 10px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .event p{
+            font-size: 12px;
+        }
+        .event a{
+            font-size:12px ;
+            text-decoration: none;
+            color:#1876f2 ;
+        }
+        .left-event span{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #1876f2;
+            color: #fff;
+            font-size: 10px;
+            padding: 9px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="SoicalBook.png" class="logo">
+            <ul>
+                <li><img src="notification.png"></li>
+                <li><img src="inbox.png"></li>
+                <li><img src="video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="search.png">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online">
+                <img src="miss nepal.jpg">
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!---------- left-siderbar----------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="news.png">Latest News</a>
+                <a href="#"><img src="friends.png">Friends</a>
+                <a href="#"><img src="groups.png">Group</a>
+                <a href="#"><img src="marketplace.png">Marketplace</a>
+                <a href="#"><img src="watch.png">watch</a>
+            </div>
+            <a href="#">See More</a>
+            <div class="shortcut-links">
+                <p>Your shrotcut</p>
+                <a href="#"><img src="shrotcut-1.jpg">Web Developers</a>
+                <a href="#"><img src="shrotcut-2.jpg">Web Design course</a>
+                <a href="#"><img src="shrotcut-3.jpg">Full stack Development </a>
+                <a href="#"><img src="shrotcut-4.jpg">Website Experts</a>
+            </div>
+        </div>
+        <!------------ main-content--------- --->
+        <div class="main-content"></div>
+        <!------------ right-siderbar--------- --->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p>Manish shrestha park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>10</h3>
+                    <span>june</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p>Manish shrestha park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
