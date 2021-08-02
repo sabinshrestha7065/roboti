@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialBook</title>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>SocialBook</title>
     <style>
         * {
             margin: 0;
@@ -158,7 +158,7 @@
             margin-bottom: 18px;
         }
 
-        .sidebar-title h4 {
+        .right-sidebar h4 {
             font-weight: 600;
             font-size: 16px;
         }
@@ -168,12 +168,14 @@
             font-size: 12px;
             color: #1876f2;
         }
-        .event{
+
+        .event {
             display: flex;
             font-size: 14px;
             margin-bottom: 20px;
         }
-        .left-event{
+
+        .left-event {
             border-radius: 10px;
             height: 65px;
             width: 65px;
@@ -184,15 +186,18 @@
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .event p{
+
+        .event p {
             font-size: 12px;
         }
-        .event a{
-            font-size:12px ;
+
+        .event a {
+            font-size: 12px;
             text-decoration: none;
-            color:#1876f2 ;
+            color: #1876f2;
         }
-        .left-event span{
+
+        .left-event span {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -202,26 +207,91 @@
             font-size: 10px;
             padding: 9px 0;
         }
+
+        .sidebar-ads {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .online-list {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .online-list .online img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .online-list .online {
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .online-list .online img::after {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        .story-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .story {
+            flex-basis: 18%;
+            padding-top: 32%;
+            position: relative;
+            background-image: url(images/Akshay.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .story img {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px solid #744141;
+        }
+
+        .story p {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <div class="nav-left">
-            <img src="SoicalBook.png" class="logo">
+            <img src="images/SoicalBook.png" class="logo">
             <ul>
-                <li><img src="notification.png"></li>
-                <li><img src="inbox.png"></li>
-                <li><img src="video.png"></li>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
             </ul>
         </div>
         <div class="nav-right">
             <div class="search-box">
-                <img src="search.png">
+                <img src="images/search.png">
                 <input type="text" placeholder="search">
             </div>
             <div class="nav-user-icon online">
-                <img src="miss nepal.jpg">
+                <img src="images/miss nepal.jpg">
             </div>
         </div>
     </nav>
@@ -229,23 +299,35 @@
         <!---------- left-siderbar----------- -->
         <div class="left-sidebar">
             <div class="imp-links">
-                <a href="#"><img src="news.png">Latest News</a>
-                <a href="#"><img src="friends.png">Friends</a>
-                <a href="#"><img src="groups.png">Group</a>
-                <a href="#"><img src="marketplace.png">Marketplace</a>
-                <a href="#"><img src="watch.png">watch</a>
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/groups.png">Group</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="images/watch.png">watch</a>
             </div>
             <a href="#">See More</a>
             <div class="shortcut-links">
                 <p>Your shrotcut</p>
-                <a href="#"><img src="shrotcut-1.jpg">Web Developers</a>
-                <a href="#"><img src="shrotcut-2.jpg">Web Design course</a>
-                <a href="#"><img src="shrotcut-3.jpg">Full stack Development </a>
-                <a href="#"><img src="shrotcut-4.jpg">Website Experts</a>
+                <a href="#"><img src="images/shrotcut-1.jpg">Web Developers</a>
+                <a href="#"><img src="images/shrotcut-2.jpg">Web Design course</a>
+                <a href="#"><img src="images/shrotcut-3.jpg">Full stack Development </a>
+                <a href="#"><img src="images/shrotcut-4.jpg">Website Experts</a>
             </div>
         </div>
         <!------------ main-content--------- --->
-        <div class="main-content"></div>
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story">
+                    <img src="images/plus-circle.png">
+                    <p>post story</p>
+                </div>
+                <div class="story">
+                    <img src="images/juna.jpg">
+                    <p>post story</p>
+                </div>
+            </div>
+        </div>
         <!------------ right-siderbar--------- --->
         <div class="right-sidebar">
             <div class="sidebar-title">
@@ -259,8 +341,7 @@
                 </div>
                 <div class="right-event">
                     <h4>Social Media</h4>
-                    <p>Manish shrestha park</p>
-                    <a href="#">More Info</a>
+                    <p><img src="images/location.png"> Manish shrestha park</p> <a href="#">More Info</a>
                 </div>
             </div>
             <div class="event">
@@ -270,9 +351,30 @@
                 </div>
                 <div class="right-event">
                     <h4>Mobile Marketing</h4>
-                    <p>Manish shrestha park</p>
+                    <p><img src="images/location.png">Manish shrestha park</p>
                     <a href="#">More Info</a>
                 </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/Akshay.jpg">
+                </div>
+                <p>Manish shrestha</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/miss nepal.jpg">
+                </div>
+                <p>juna shrestha</p>
             </div>
         </div>
     </div>
