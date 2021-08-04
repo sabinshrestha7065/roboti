@@ -9,9 +9,13 @@
     <style>
         .main {
             display: flex;
+            background: #007bff;
+            padding: 20px;
+
         }
 
         .nav-left {
+            gap: 5px;
             display: flex;
             position: relative;
             width: 100%;
@@ -28,9 +32,12 @@
             gap: 45px;
             padding: 10px;
         }
-        .text{
-            margin-left: -170px;
+
+        .contianer {
+            margin-bottom: 200px;
+            position: relative;
         }
+
         .text h4 {
             font-family: 'Nunito', sans-serif;
             font-size: 3.6rem;
@@ -42,6 +49,7 @@
             border: 50px;
             margin: 20px;
             padding-bottom: 1px;
+            margin-left: -90px;
         }
 
         .text p {
@@ -54,7 +62,7 @@
             font-weight: 400;
             color: #181818;
             margin: 20px;
-            margin-left: 228px;
+            margin-left: 115px;
         }
 
         .icon {
@@ -62,14 +70,14 @@
             align-items: center;
             padding-left: 60px;
             gap: 10px;
+            margin-left: 60px;
         }
 
         .btn {
             display: flex;
-            padding-left: 60px;
             gap: 10px;
             height: 60px;
-            margin-left: -2px;
+            margin-left: 100px;
         }
 
         .btn-primary {
@@ -87,14 +95,24 @@
             border-radius: 50px;
         }
 
-        .email {
-            flex-direction: column;
-            display: flex;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            height: 250px;
-            width: 400px;
-            gap: 30px;
+        .picture {
+            position: absolute;
+            padding: 140px;
+            margin-left: 700px;
+            background: rgba(red, green, blue, alpha);
+        }
+
+        .image {
+            height: 350px;
+            width: 500px;
+            margin-left: -100px;
+        }
+
+        .nav {
+            background: sandybrown;
+        }
+        .pets2{
+            height: 20px;
         }
     </style>
 </head>
@@ -102,6 +120,7 @@
 <body>
     <div class="main">
         <div class="nav-left">
+            <img src="images/pets2.png" class="pets2">
             <div class="logo">PetsM4</div>
         </div>
         <div class="nav-right">
@@ -109,24 +128,29 @@
             <div class="logo">Live Demo</div>
             <div class="logo">Live Demo Blocks</div>
             <div class="logo">BUY NOW</div>
-                <a href="http://127.0.0.1:5500/contact%20us.html">Contact US</a>
-            </div>
+            <a href="http://127.0.0.1:5500/contact%20us.html">Contact US</a>
         </div>
     </div>
-    <div class="text">
-        <h4>Pets Training <br>school</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </div>
-    <div class="icon">
-        <img src="gobal.png">
-        <h3 class="icon-1">EAT</h3>
-        <img src="photo.png">
-        <h3 class="icon-1">PHOTO</h3>
-    </div>
-    <div class="btn">
-        <button type="button" class="btn btn-primary">VIEW MORE</button>
-        <button type="button" class="btn btn-primary">BOOK NOW</button>
-    </div>
+    <div class="nav">
+        <div class="picture">
+            <img src="images/pets.jpg" class="image">
+        </div>
+        <div class="contianer">
+            <div class="text">
+                <h4>Pets Training <br>school</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="icon">
+                <img src="gobal.png">
+                <h3 class="icon-1">EAT</h3>
+                <img src="photo.png">
+                <h3 class="icon-1">PHOTO</h3>
+            </div>
+            <div class="btn">
+                <button type="button" class="btn btn-primary">VIEW MORE</button>
+                <button type="button" class="btn btn-primary">BOOK NOW</button>
+            </div>
+        </div>
     </div>
 </body>
 

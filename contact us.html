@@ -22,14 +22,15 @@
         }
 
         .photo {
-            vertical-align: top;
+            display: flex;
+            margin-top: -850px;
             justify-content: center;
             align-items: center;
             display: flex;
-            width: 800px;
-            height: 500px;
+            width: 1000px;
+            height: 600px;
             background-color: aqua;
-            margin-left: 20%;
+            margin-left: 15%;
         }
 
         .profile {
@@ -39,36 +40,41 @@
 
         .circle {
             height: 400px;
-            width:350px;
+            width: 350px;
             margin-right: 100px;
         }
 
         .name {
             border: none;
+            height: 20px;
+
         }
 
         .image {
-            margin-right:600px;
+            margin-right: 600px;
             height: 100px;
             width: 100px;
         }
 
         .contact {
+            display: flex;
             margin-left: 400px;
             border: 2px solid wheat;
             padding-top: 30px;
-            height: 200px;
-            width:200 px;
+            height: 300px;
+            width: 500px;
         }
-         h1{
+
+        h1 {
             font-size: 800;
         }
+
         .btn-primary {
             align-items: flex-start;
             justify-content: center;
             font-weight: 900;
             padding: 2px;
-            margin: 2px;
+            margin: 5px;
             color: #fff;
             background-color: black;
             border-color: black;
@@ -77,6 +83,26 @@
             cursor: pointer;
             border-radius: 50px;
         }
+
+        .box {
+            margin-left: 60px;
+        }
+
+        .email {
+            margin-left: 40px;
+        }
+
+        .email h4 {
+            font-weight: 900;
+        }
+
+        .email p {
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .address{
+            padding: 15px;
+        }
     </style>
 </head>
 
@@ -84,27 +110,37 @@
     <div class="container">
         <div class="box">
             <div class="head">CONTACT US</div>
-            <P>Don't let more animals fall victim to cruelty.<br> your beautifull life is save the dogs. it can help catch thief and save lives.</P>
+            <P>Don't let more animals fall victim to cruelty.<br> your beautifull life is save the dogs. it can help
+                catch thief and save lives.</P>
         </div>
-        <button class="photo">
-            <div class="Profile">
-                <div class="image">
-                    <img src="images/dog.jpg" alt="dog" width="70" height="10" class="circle">
+    </div>
+    <button class="photo">
+        <div class="Profile">
+            <div class="image">
+                <img src="images/dog.jpg" alt="dog" width="70" height="10" class="circle">
+            </div>
+            <div class="contact">
+                <div class="box">
+                    <h1>Contact Us</h1>
+                    <h5>Full Name</h5>
+                    <input type="text" class="name">
+                    <h5>E-mail</h5>
+                    <input type="text" class="name">
+                    <h5>Message</h5>
+                    <input type="text" class="name">
+                    <div type="button" class="btn btn-primary">Contact Us</div>
                 </div>
-                <div class="contact">
-                    <h1>Contact us</h1>
-                    <div class="inform">
-                        <h5>Full Name</h5>
-                        <input type="text" class="name">
-                        <h5>E-mail</h5>
-                        <input type="text" class="name">
-                        <h5>Message</h5>
-                        <input type="text" class="name">
-                        <div type="button" class="btn btn-primary">Contact Us</div>
+                <div class="email">
+                    <h4>Contact</h4>
+                    <p>manishshrestha019@gmail.com</p>
+                    <div class="address">
+                        <h4>Address</h4>
+                        <p>Narephat-2,koteshower <br> Kathmandu </p>
                     </div>
                 </div>
             </div>
-        </button>
+        </div>
+    </button>
     </div>
 </body>
 
