@@ -8,38 +8,37 @@
     <title>CONTACT US</title>
     <style>
         .container {
-            background-image: url(background.jpg);
-        }
-
-        .email {
-            flex-direction: column;
-            display: flex;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            height: 250px;
-            width: 400px;
-            gap: 30px;
-            background-image: url(background.jpg);
+            background-image: url(images/background.jpg);
         }
 
         .box .head {
             text-align: center;
         }
 
-        .head {
-            align-items: center;
-        }
-
         p {
-            justify-content: center;
-        }
-
-        .email-text {
-            border: 1px;
+            padding: 10px;
+            border: 1px solid black;
             text-align: center;
-            height: 30px;
-            margin: 10px;
-            box-shadow: 1px 1px 1px 1px;
+        }
+        .photo{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 10px;
+            border: 1px;
+            width: 550px;
+            height: 500px;
+            gap: 80px;
+            box-shadow: 2px 3px 3px 2px;
+            margin-left:60px;
+        }
+        .profile {
+            position: absolute;
+        }
+        .circle{
+            height: 150px;
+            width: 150px;
+            margin: 15px;
         }
     </style>
 </head>
@@ -48,16 +47,17 @@
     <div class="container">
         <div class="box">
             <div class="head">CONTACT US</div>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Laborum esse at iure velit enim
-                porro error dolor suscipit <br> hic asperiores? Libero dolorem id aliquam, aspernatur <br>illum iusto
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum esse at iure velit enimporro error dolor
+                suscipit hic asperiores? <br>Libero dolorem id aliquam, aspernaturillum iusto
                 nesciunt amet odio?</P>
-            <div class="email">
-                <input type="text" placeholder="Email or phone Number" class="email-text">
-                <input type="text" placeholder="password" class="email-text">
-                <input type="text" placeholder="inquiry for sales" class="email-text">
-                <input type="text" placeholder="message" class="email-text">
-            </div>
         </div>
+        <button class="photo">
+            <div class="Profile">
+                <div class="image">
+                    <img src="images/miss nepal.jpg" alt="shrinkhala khatiwada" width="70" height="10" class="circle">
+                </div>
+            </div>
+        </button>
     </div>
 </body>
 
