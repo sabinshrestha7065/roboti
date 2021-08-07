@@ -8,6 +8,12 @@
     <title>CONTACT US</title>
     <link rel="fab fa-facebook" href="https://fontawesome.com/" type="image">
     <style>
+        nav{
+            background-image: url(images/background.jpg);
+            width: 100%;
+            height:800px;
+            background-color: rgba(red, green, blue, alpha);
+        }
         .container {
             width: 100%;
             height: 1000px
@@ -19,22 +25,20 @@
         }
 
         p {
-            padding: 10px;
+            padding: 30px;
             text-align: center;
-            border: 1px solid wheat;
-            background: skyblue;
 
         }
 
         .photo {
             display: flex;
-            margin-top: -850px;
+            margin-top: -900px;
             justify-content: center;
             align-items: center;
             display: flex;
             width: 1000px;
             height: 600px;
-            background-color: aqua;
+            border: none;
             margin-left: 15%;
         }
 
@@ -44,7 +48,7 @@
         }
 
         .circle {
-            height: 520px;
+            height: 500px;
             width: 400px;
             margin-left: -30px;
             margin-bottom: 65px;
@@ -115,42 +119,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <div class="head">CONTACT US</div>
-            <P>Don't let more animals fall victim to cruelty.<br> your beautifull life is save the dogs. it can help
-                catch thief and save lives.</P>
-        </div>
-    </div>
-    <button class="photo">
-        <div class="Profile">
-            <div class="image">
-                <img src="images/dog.jpg" alt="dog" width="70" height="10" class="circle">
+    <nav>
+        <div class="container">
+            <div class="box">
+                <div class="head">CONTACT US</div>
+                <P>Don't let more animals fall victim to cruelty. your beautifull life is save the dogs. it can help
+                    catch thief and save lives.</P>
             </div>
-            <div class="contact">
-                <div class="box">
-                    <h1>Contact Us</h1>
-                    <h5>Full Name</h5>
-                    <input type="text" class="name">
-                    <h5>E-mail</h5>
-                    <input type="text" class="name">
-                    <h5>Message</h5>
-                    <input type="text" class="name">
-                    <div type="button" class="btn btn-primary">Contact Us</div>
+        </div>
+        <button class="photo">
+            <div class="Profile">
+                <div class="image">
+                    <img src="images/dog.jpg" alt="dog" width="70" height="10" class="circle">
                 </div>
-                <div class="email">
-                    <h4>Contact</h4>
-                    <p>manishshrestha019@gmail.com</p>
-                    <div class="address">
-                        <h4>Address</h4>
-                        <p>Narephat-2,koteshower <br> Kathmandu </p>
+                <div class="contact">
+                    <div class="box">
+                        <h1>Contact Us</h1>
+                        <h5>Full Name</h5>
+                        <input type="text" class="name">
+                        <h5>E-mail</h5>
+                        <input type="text" class="name">
+                        <h5>Message</h5>
+                        <input type="text" class="name">
+                        <div type="button" class="btn btn-primary">Contact Us</div>
                     </div>
-                    <i class="fab fa-facebook"></i>
+                    <div class="email">
+                        <h4>Contact</h4>
+                        <p>manishshrestha019@gmail.com</p>
+                        <div class="address">
+                            <h4>Address</h4>
+                            <p>Narephat-2,koteshower <br> Kathmandu </p>
+                        </div>
+                        <i class="fab fa-facebook"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </button>
-    </div>
+        </button>
+    </nav>
 </body>
 
 </html>

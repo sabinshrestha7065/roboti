@@ -7,27 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page Design</title>
     <style>
+        .map{
+            background-image: url(images/hand.jpg);
+        }
         .main {
             display: flex;
-            background: #007bff;
             padding: 20px;
 
         }
 
         .nav-left {
+            margin-left: 35px;
             gap: 5px;
             display: flex;
             position: relative;
-            width: 100%;
             color: black;
             padding: 10px;
         }
 
         .nav-right {
+            margin-left: 560px;
             flex-direction: row;
             display: flex;
             position: relative;
-            width: 100%;
             color: black;
             gap: 45px;
             padding: 10px;
@@ -109,49 +111,120 @@
         }
 
         .nav {
-            background: sandybrown;
+            background: none;
         }
-        .pets2{
+
+        .pets2 {
             height: 20px;
+        }
+
+        .life {
+            display: flex;
+        }
+
+        footer {
+            margin-top: -160px;
+            margin-left: 55px;
+            padding: 20px;
+
+        }
+
+        .head h4 {
+            font-weight: 800;
+            color: blue;
+            margin-left: 45px;
+        }
+
+        .contant {
+            display: flex;
+        }
+
+        .list h5 {
+            display: flex;
+            margin-left: 45px;
+            color: green;
+            font-weight: 900;
+        }
+
+        .list ul li {
+            display: flex;
+            padding: 4px;
         }
     </style>
 </head>
 
 <body>
-    <div class="main">
-        <div class="nav-left">
-            <img src="images/pets2.png" class="pets2">
-            <div class="logo">PetsM4</div>
-        </div>
-        <div class="nav-right">
-            <div class="logo">Home</div>
-            <div class="logo">Live Demo</div>
-            <div class="logo">Live Demo Blocks</div>
-            <div class="logo">BUY NOW</div>
-            <a href="contact%20us.html">Contact US</a>
-        </div>
-    </div>
-    <div class="nav">
-        <div class="picture">
-            <img src="images/pets.jpg" class="image">
-        </div>
-        <div class="contianer">
-            <div class="text">
-                <h4>Pets Training <br>school</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    <div class="map">
+        <div class="main">
+            <div class="nav-left">
+                <img src="images/pets2.png" class="pets2">
+                <div class="logo">PetsM4</div>
             </div>
-            <div class="icon">
-                <img src="gobal.png">
-                <h3 class="icon-1">EAT</h3>
-                <img src="photo.png">
-                <h3 class="icon-1">PHOTO</h3>
-            </div>
-            <div class="btn">
-                <button type="button" class="btn btn-primary">VIEW MORE</button>
-                <button type="button" class="btn btn-primary">BOOK NOW</button>
+            <div class="nav-right">
+                <div class="logo">Home</div>
+                <div class="logo">Live Demo</div>
+                <div class="logo">Live Demo Blocks</div>
+                <div class="logo">BUY NOW</div>
+                <a href="contact%20us.html">Contact US</a>
             </div>
         </div>
-    </div>
+        <div class="nav">
+            <div class="picture">
+                <img src="images/pets.jpg" class="image">
+            </div>
+            <div class="contianer">
+                <div class="text">
+                    <h4>Pets Training <br>school</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </div>
+                <div class="icon">
+                    <img src="gobal.png">
+                    <h3 class="icon-1">EAT</h3>
+                    <img src="photo.png">
+                    <h3 class="icon-1">PHOTO</h3>
+                </div>
+                <div class="btn">
+                    <button type="button" class="btn btn-primary">VIEW MORE</button>
+                    <button type="button" class="btn btn-primary">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="life">
+                <div class="head">
+                    <h4>THE SITE OF YOUR CAMPAIGNS</h4>
+                    <div class="contant">
+                        <div class="list">
+                            <h5><strong>SERVICES</strong></h5>
+                            <ul>
+                                <li>Email marketing</li>
+                                <li>Campaigns</li>
+                                <li>Branding</li>
+                                <li>Offline</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5><strong>ABOUT</strong></h5>
+                            <ul>
+                                <li>Our story</li>
+                                <li>Benefits</li>
+                                <li>Team</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5><strong>LEGAL</strong></h5>
+                            <ul>
+                                <li>Terms & Conditions</li>
+                                <li>Privancy policy</li>
+                                <li>Terms of use</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </map>
 </body>
 
 </html>
