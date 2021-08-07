@@ -5,23 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav-dribble</title>
+    <title>Dribble-cover</title>
     <style>
         .nav {
             display: flex;
         }
 
-        .container {
-            flex-direction: none;
-            cursor: pointer;
-        }
-
-        .head {
-            cursor: pointer;
+        .nav-container {
+            position: relative;
         }
 
         .menu {
-            display: none;
             width: 440px;
             height: 440px;
             padding: 16px 0;
@@ -30,6 +24,12 @@
             cursor: pointer;
             display: flex;
             font-size: 100%;
+        }
+
+        .nav-container:hover .menu {
+            position: relative;
+            ;
+            display: block;
         }
 
         .list {
@@ -45,7 +45,6 @@
 
         .card-heading {
             font-weight: bold;
-            display: flex;
             gap: 10px;
             margin: 1px;
         }
@@ -57,7 +56,15 @@
             margin-bottom: 30px;
         }
 
+        .container:hover menu {
+            position: relative;
+            display: block;
+
+        }
+
         .inspiration-list {
+            padding: 10px;
+            display: flex;
             font-family: "Haas Grot Text R ", "Helvetica Neue", Helvetica, Arial, sans-serif;
             line-height: 20px;
             padding: 8px;
@@ -65,7 +72,6 @@
         }
 
         .inspiration-list-title {
-            display: flex;
             padding: 2px;
         }
 
@@ -75,15 +81,15 @@
         }
 
         .inspiration-list ul {
-            display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-bottom: 5px;
+            gap: 20px;
+            margin-top: 10px;
+
         }
 
         .inspiration-list ul li {
-            display: flex;
             margin: 3px;
+            display: flex;
         }
 
         .nav-container {
@@ -114,7 +120,8 @@
         .nav-container-2 {
             margin-left: 40px;
         }
-        .box-3{
+
+        .box-3 {
             height: 230px;
             width: 230px;
             background: transparent;
@@ -124,12 +131,112 @@
             border-color: black;
             vertical-align: baseline;
         }
+
+        main {
+            margin-left: 200px;
+            gap: 20px;
+        }
+
+        main .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-right li {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-right button {
+            border: none;
+            background: none;
+            font-size: medium;
+        }
+
+        .btn-sign-up {
+            display: flex;
+            background-color: #ea4c89;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            transition: color 200ms ease;
+            cursor: pointer;
+            appearance: none;
+            position: relative;
+            outline: none;
+            font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            height: 29px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .icon {
+            margin-top: 6px;
+        }
+
+        .text-content {
+            padding: 20px;
+            margin-left: 60px;
+        }
+
+        .text-content h1 {
+            font-weight: 900;
+        }
+
+        .text-content p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .footer{
+            display: flex;
+            gap: 60px;
+        }
+        .footer p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .first h1{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .second h4{
+            margin-left: 48px;
+        }
+        .second li{
+            display: flex;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .third h4{
+            margin-left: 6px;
+        }
+        .third li{
+            display: flex;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .fourth h4{
+            margin-left: 6px;
+        }
+        .fourth li{
+            display: flex;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .five h4{
+            margin-left: 6px;
+        }
+        .five li{
+            display: flex;
+            padding: 10px;
+            font-size: 17px;
+        }
     </style>
 </head>
 
 <body>
     <div class="nav">
-        <div class="container">
+        <div class="nav-container">
             <h4>Inspiration</h4>
             <div class="menu">
                 <div class="list">
@@ -144,6 +251,7 @@
                     <div class="card-heading">Weekly Warm-up</div>
                     <div class="card-body">promnt to flex your design skills</div>
                 </div>
+
                 <div class="inspiration-list">
                     <ul>
                         <li class="title">Browswe categories</li>
@@ -189,7 +297,74 @@
                 </div>
             </div>
         </div>
+        <main>
+            <ul class="nav-right">
+                <li>
+                    <img src="images/search.png" class="icon">
+                    <button>sign in</button>
+                </li>
+                <li class="btn-sign-up">
+                    <button class="btn-sign-up">sign up</button>
+                </li>
+            </ul>
+        </main>
     </div>
+    <div class="text-content">
+        <h1><strong> Discover the world's top <br>designers & creatives</strong></h1>
+        <p>Dribble is the leading destination to find & showcase<br> creative work and home tonthe world's best design
+            professionals.</p>
+        <button class="btn-sign-up">sign up</button>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h1>Dribble</h1>
+                <P>Dribble is the world,s leading <br>community for creatives to share, grow, <br>and get hired.</P>
+            </div>
+            <div class="second">
+                <h4>For designers</h4>
+                <ul>
+                    <li>Go pro!</li>
+                    <li>Explore design work</li>
+                    <li>Design blog</li>
+                    <li>Overtime podcast</li>
+                    <li>Dribble meetups</li>
+                    <li>Playoffs</li>
+                    <li>Weekly Warm-up</li>
+                    <li>Code of conduct</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h4>Hire designers</h4>
+                <li>Post a job opening</li>
+                <li>Post a freelance</li>
+                <li>search for desingers</li>
+                <h4>Brands</h4>
+                <li>Advertise with us</li>
+            </div>
+            <div class="fourth">
+                <h4>Company</h4>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Support</li>
+                <li>Media kit</li>
+                <li>Testimonials</li>
+                <li>API</li>
+                <li>Terms of service</li>
+                <li>Privacy policy</li>
+            </div>
+            <div class="five">
+                <h4>Directories</h4>
+                <li>Designers jobs</li>
+                <li>Designers for hire</li>
+                <li>Freelance designers for hire</li>
+                <li>Tags</li>
+                <li>Places</li>
+                <h4>Design assets</h4>
+                <li>Shop creative Market</li>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
