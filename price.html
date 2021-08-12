@@ -26,15 +26,17 @@
             background-image: url(photo.jpg);
             margin: 60px;
             padding-left: 200px;
-            background-color: blueviolet;
         }
 
         .btn-first {
             padding: 20px;
             width: 250px;
             border: none;
+            cursor: pointer;
         }
-
+        .btn-first:hover{
+            transform: scale(1.05) translate3d(0,0,0);
+        }
         .text {
             margin: 20px;
             box-shadow: 0px 1px 0px 0px;
@@ -43,18 +45,23 @@
         .btn-second {
             background-color: skyblue;
             height: 400px;
-            width: 290px;
+            width: 250px;
             padding: 34px;
             border: none;
             margin: 2px;
+            cursor: pointer;
         }
-
+        .btn-second:hover{
+            transform: scale(1.05) translate3d(0,0,0);
+        }
         .btn-third {
             padding: 20px;
             border: none;
-            background-color: white;
+            cursor: pointer;
         }
-
+        .btn-third:hover{
+            transform: scale(1.05) translate3d(0,0,0);
+        }
         .text-1 {
             background-color: rgb(24, 177, 238);
             height: 40px;
@@ -73,8 +80,8 @@
             text-align: center;
             background-color: red;
             height: 40px;
-            width: 220px;
-            margin-right: 40px;
+            width: 200px;
+            margin-left: -9px;
             border-radius: 8px;
 
         }
@@ -98,7 +105,7 @@
         </div>
     </div>
     <div class="box">
-        <button class="btn btn-first">
+        <button class="btn btn-first"  onclick="void(0);">
             <h4>BASIC</h4>
             <div class="text-1">$29</div>
             <div class="text">1 full user</div>
@@ -107,7 +114,7 @@
             <div class="text"> 5 coffee cups</div>
             <div class="btn-2">BUY NOW</div>
         </button>
-        <button class="btn btn-second">
+        <button class="btn btn-second"onclick="void(0);">
             <h4>STANDART</h4>
             <div class="text-3">$59</div>
             <div class="text">1 full user</div>

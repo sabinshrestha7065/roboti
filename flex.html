@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex</title>
+    <title>flex-box</title>
     <style>
+        body {
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+        }
+
         .one {
             display: flex;
             margin: auto;
+            gap: 5px;
+        }
+
+        .two {
+            padding: 5px;
         }
 
         .box-1 {
@@ -36,6 +47,10 @@
             font-weight: bold;
         }
 
+        .three {
+            padding: 5px;
+        }
+
         .box-2 {
             background-color: palevioletred;
             height: 300px;
@@ -45,7 +60,7 @@
 
         .four {
             display: flex;
-            margin: auto;
+            gap: 5px;
         }
 
         .box-6 {
@@ -58,35 +73,40 @@
         .box-7 {
             background-color: rgb(124, 124, 238);
             height: 150px;
-            width: 330px;
+            width: 325px;
             font-weight: bold;
         }
 
         .box-3 {
             background-color: purple;
             width: 195px;
-            font-weight: bold;
+
         }
 
         .five {
             display: flex;
+            padding: 5px;
         }
 
         .box-8 {
             background-color: blue;
             height: 150px;
-            width: 945px;
+            width: 950px;
             text-align: center;
             font-weight: bold;
         }
 
         .six {
             margin: auto;
+            gap: 5px;
+            padding: 5px;
         }
 
         .seven {
             display: flex;
             margin: auto;
+            gap: 5px;
+            padding: 5px;
         }
 
         .box-9 {
@@ -99,7 +119,7 @@
 
         .box-10 {
             background-color: red;
-            width: 445px;
+            width: 450px;
             text-align: center;
             font-weight: bold;
         }
