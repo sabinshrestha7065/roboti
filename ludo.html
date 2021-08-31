@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .game {
+            height: 775px;
+            width: 775px;
+        }
+
+        .game {
+            border: 1px solid black;
+        }
+
+        .start {
+            display: flex;
+        }
+
+        .second {
+            display: flex;
+        }
+
+        .end {
+            display: flex;
+        }
+
+        .red {
+            height: 308px;
+            width: 308px;
+            background: red;
+        }
+
+        .green {
+            height: 308px;
+            width: 308px;
+            background: green;
+            margin-left: 50px;
+        }
+
+        .blue {
+            height: 308px;
+            width: 308px;
+            background: blue;
+            margin-top: 4px;
+        }
+
+        .yellow {
+            height: 308px;
+            width: 308px;
+            background: yellow;
+            margin-left: 50px;
+            margin-top: 4px;
+        }
+
+        .center {
+            display: flex;
+            width: 118px;
+            height: 200px;
+        }
+
+        .center-1 {
+            margin-top: 2px;
+            display: flex;
+            width: 118px;
+            height: 200px;
+        }
+
+        .left {
+            display: flex;
+            width: 200px;
+            height: 100px;
+            margin-left: 5px;
+        }
+
+        .right {
+            display: flex;
+            width: 200px;
+            height: 100px;
+            margin-left:0px;
+        }
+
+        .box {
+            height: 50px;
+            width: 48px;
+            border: 1px solid black;
+        }
+        .box-1{
+            height: 50px;
+            width: 48px;
+            border: 1px solid black;
+            background: green;
+        }
+        .box-2{
+            height: 50px;
+            width: 48px;
+            border: 1px solid black;
+            background: blue;
+        }
+        .box-3{
+            height: 50px;
+            width: 48px;
+            border: 1px solid black;
+            background: red;
+        }
+        .box-4{
+            height: 50px;
+            width: 48px;
+            border: 1px solid black;
+            background: yellow;
+        }
+        .circle {
+            gap: 10px;
+            margin: 20px;
+            height: 80px;
+            width: 80px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .circle-1 {
+            margin-left: 10px;
+            gap: 10px;
+            margin: 20px;
+            height: 80px;
+            width: 80px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .coin {
+            display: flex;
+        }
+
+        .coin-1 {
+            display: flex;
+        }
+        .main{
+            position: relative;
+            border: 1px solid black;
+            height:153px;
+            background: goldenrod;
+            width: 165px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game">
+        <div class="start">
+            <div class="red">
+                <div class="coin">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="coin-1">
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-1"></div>
+                    <div class="box-1"></div>
+                    <div class="box-1"></div>
+                    <div class="box-1"></div>
+                    <div class="box-1"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="green">
+                <div class="coin">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="coin-1">
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="left">
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-3"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-3"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-3"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-3"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-3"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="main"></div>
+            <div class="right">
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-4"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-4"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-4"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-4"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box-4"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="blue">
+                <div class="coin">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="coin-1">
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                </div>
+            </div>
+            <div class="center-1">
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box-2"></div>
+                    <div class="box-2"></div>
+                    <div class="box-2"></div>
+                    <div class="box-2"></div>
+                    <div class="box-2"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="step">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="yellow">
+                <div class="coin">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="coin-1">
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
