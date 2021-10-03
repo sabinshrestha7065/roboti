@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="daraz.css">
     <title>phone</title>
     <style>
+    /* body{
+        background: white;
+    } */
         nav {
             display: flex;
             gap: 20px;
@@ -34,6 +38,7 @@
             border: 1px solid rgb(235, 109, 63);
             width: 150px;
             height: 30px;
+            cursor: pointer;
         }
 
         .btn-3 {
@@ -57,13 +62,15 @@
             font-weight: 600;
             margin-left: 130px;
         }
-        .btn-5{
+
+        .btn-5 {
             width: 100px;
             height: 25px;
-            border:  gainsboro;
+            border: gainsboro;
             color: red;
             font-weight: 600;
         }
+
         .aside {
             border: none;
             background: rgb(248, 242, 242);
@@ -86,9 +93,11 @@
         .cash {
             box-shadow: 0px 1px 0px 0px;
         }
-        .sold{
+
+        .sold {
             display: flex;
         }
+
         table,
         th,
         td {
@@ -119,7 +128,7 @@
                 <button>128GB</button>
                 <button>64GB</button>
                 <div><strong>Quantity</strong></div>
-                <input type="number" name="number">
+                <input type="number" name="number" id="number">
                 <p>only 2 items left</p>
             </div>
             <div class="btn">
@@ -145,9 +154,9 @@
             </div>
             <div class="warranty">
                 <h6>Retrun & Warranty</h6>
-                <input type="checkbox" name="warranty">
+                <input type="checkbox" name="warranty" id="warranty">
                 <label for="warranty">100% Authentic</label>
-                <input type="checkbox" name="warranty">
+                <input type="checkbox" name="warranty" id="days">
                 <label for="warranty">14 days easy retrun<p>change of mind is not applicabe</p></label>
                 <span>1 year Brand Warranty</span>
                 <h3>Xiaomi</h3>

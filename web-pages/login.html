@@ -4,91 +4,89 @@
 <head>
     <title>Facebook login page</title>
     <style>
-        body{
-            display: flex;
-            align-items: center;
-            height: 100vh;
-            justify-content: center;
-        }
         .container {
-            vertical-align: top;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            width: 800px;
+            width: 730px;
             height: 500px;
+            border: 2px solid ghostwhite;
         }
 
         .facebook {
-            justify-content: start;
-            margin-right: 100px;
-            margin-bottom: 10px;
+            position: relative;
+            top: 65px;
+            left: 30px;
+
         }
 
-        .title {
+        h1 {
             margin-top: 10px;
             margin-bottom: 10px;
             padding: 0px;
             color: blue;
             outline: none;
             display: flex;
-            font-family:cursive;
+            font-weight: 900;
         }
 
         .text-p {
             display: flex;
             text-align: left;
-            margin-top: 10px;
         }
 
         .email {
             flex-direction: column;
             display: flex;
-            border: 1px solid lightcoral;
+            position: relative;
+            bottom: 80px;
+            left: 280px;
+            background: white;
             border-radius: 4px;
+            box-shadow: 1px 1px 2px 2px gray;
             height: 250px;
-            width: 400px;
+            width: 350px;
         }
-
         .email-text {
             border: 1px;
             text-align: center;
             height: 30px;
             margin: 10px;
-
-
+            border: 1px solid gainsboro;
         }
-
-        .text {
-            width: 330px;
-        }
-
         .log-in {
-            color: rebeccapurple;
-            background-color: rebeccapurple;
+            position: relative;
+            color: white;
+            background-color: blue;
             text-align: center;
             height: 30px;
             margin: 10px;
             cursor: pointer;
-            border: 1px solid grey;
-
+            border: none;
         }
-
         .forgot {
+            font-weight: 600;
             color: blue;
             padding-bottom: 15px;
             cursor: pointer;
+            box-shadow: 0px 1px 0px 0px;
         }
-
         .new {
-            display: block;
+            position: relative;
+            display: flex;
+            margin: 10px;
             border: 1px solid #e0e0e0;
             background-color: green;
             border-radius: 4px;
             height: 30px;
             width: 160px;
-            margin-left: 120px;
             cursor: pointer;
+            left: 90px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .create {
+            position: relative;
+            bottom: 60px;
+            left: 100px;
         }
     </style>
 </head>
@@ -99,14 +97,18 @@
             <h1 class="title">facebook</h1>
             <p class="text-p"> <strong> Connect with friends and the word<br> around you on facebook.</strong></p>
         </div>
-        <div class="email">
+        <form class="email">
             <input type="email" placeholder="Email or phone Number" class="email-text">
             <input type="password" placeholder="password" class="email-text">
-            <input type="text" placeholder="Log in" class="log-in">
+            <input type="text" value="Log in" class="log-in">
             <div class="forgot">Forget password?</div>
             <div class="new">Create New Account</div>
-        </div>
+
+        </form>
+        <di class="create">
+            <strong>Create a page</strong> for a celebrity, band or business.</di>
     </button>
+    <div>
 </body>
 
 </html>
