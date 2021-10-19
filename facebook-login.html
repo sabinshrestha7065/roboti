@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(216, 220, 221);
+        }
+
+        nav {
+            display: flex;
+            height: 100px;
+            width: 100vw;
+            background-color: blue;
+        }
+
+        .nav-left h2 {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xxx-large;
+            position: relative;
+            left: 50px;
+            top: 20px;
+
+        }
+
+        .nav-right {
+            display: flex;
+            position: absolute;
+            left: 1150px;
+            justify-content: center;
+            align-items: center;
+            float: right;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .new-account{
+            position: relative;
+            left: 400px;
+        }
+        .name{
+            display: flex;
+        }
+        .name input{
+            width: 300px;
+            height: 30px;
+        }
+        .email-phone{
+            display: flex;
+            gap: 5px;
+        }
+
+        .email-phone input{
+            width: 600px;
+            height: 30px;
+            gap: 5px;
+        }
+        .re-enter{
+            display: flex;
+        }
+        .re-enter input{
+            width: 600px;
+            height: 30px;
+        }
+        .new-password{
+            display: flex;
+        }
+        .new-password input{
+            width: 600px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <h2>Facebook</h2>
+        </div>
+        <div class="nav-right">
+            <div class="email">
+                <label for="email">Email or phone</label>
+                <input type="text" class=" email">
+            </div>
+            <div class="password">
+                <label for="password">password</label>
+                <input type="password" class="password">
+                <p>Forget account?</p>
+            </div>
+            <button>Log in</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="recent-login">
+            <h2>Recent Logins</h2>
+            <img src="https://i.pinimg.com/736x/b8/69/5f/b8695f007aea9a08a0419479217ca6aa.jpg" alt="picture"
+                height="300" width="300">
+            <p>jenisa</p>
+        </div>
+        <div class="new-account">
+            <h2>Create aNew Account</h2>
+            <p>It's free and always will be.</p>
+            <div class="name">
+                <input type="text" placeholder="First name" class="first-name">
+                <input type="text" placeholder="Last name" class="last-name">
+            </div>
+            <div class="email-phone">
+                <input type="text" placeholder="Mobile number or email" class="mobile no.">
+            </div>
+            <div class="re-enter">
+                <input type="text" placeholder="Re-enter mobile number or email">
+            </div>
+            <div class="new-password">
+                <input type="text" placeholder="New password" class="new-password">
+            </div>
+            <div class="birthday">
+                <h3>Birthday</h3>
+                <input type="date" class="birth-day">
+                <p>Why do i need to provide my birthday?</p>
+                <input type="radio" class=" gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" class="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <p>By clicking Sigin Up. you agree to our Terms and that you have read our Data policy. <br>  including our cookie
+                Use.</p>
+            <button class="btn">sign up</button>
+            <p>Create a page for a celebrity, band or business.</p>
+        </div>
+    </div>
+</body>
+
+</html>
