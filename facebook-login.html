@@ -37,51 +37,156 @@
         .nav-right {
             display: flex;
             position: absolute;
-            left: 1150px;
+            left: 1000px;
             justify-content: center;
             align-items: center;
             float: right;
+            gap: 30px;
         }
 
-        .container {
+        .container{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100vh;
         }
-        .new-account{
+        .email{
+            position: relative;
+            top: 10px;
+        }
+        .email label{
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: -10px;
+        }
+        .email input{
+            height: 35px;
+            width: 260px;
+        }
+        .password {
+            position: relative;
+           top: 15px;
+        }
+        .password label{
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: -10px;
+        }
+        .password input{
+            height: 35px;
+            width: 260px;
+        }
+        .password p{
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+            top:20px;
+        }
+        button{
+            position: relative;
+            left: 60px;
+            top: 20px;
+            width: 50px;
+            height: 30px;
+            border: none;
+            background: rgb(17, 17, 206);
+            color: #fff;
+        }
+        
+        .recent-login{
             position: relative;
             left: 400px;
         }
-        .name{
-            display: flex;
+        .recent-login h2{
+            font-size:50px;
+            position: relative;
+            top: 30px;
         }
-        .name input{
-            width: 300px;
-            height: 30px;
-        }
-        .email-phone{
-            display: flex;
-            gap: 5px;
+        .recent-login img{
+            position: relative;
+            top: 60px;
         }
 
-        .email-phone input{
-            width: 600px;
-            height: 30px;
-            gap: 5px;
+        .recent-login p{
+            position: relative;
+            top: 80px;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
         }
-        .re-enter{
+        .new-account {
+            position: relative;
+            left: 850px;
+    
+        }
+
+        .name {
             display: flex;
         }
-        .re-enter input{
-            width: 600px;
-            height: 30px;
+
+        .name input {
+            width: 230px;
+            height: 35px;
+            margin: 20px;
         }
-        .new-password{
+
+        .email-phone input {
+            width: 500px;
+            height: 35px;
+            margin: 20px;
+        }
+
+        .re-enter input {
+            width: 500px;
+            height: 35px;
+            margin: 20px;
+        }
+
+        .new-password input {
+            width: 500px;
+            height: 35px;
+            margin: 20px;
+        }
+
+        .birthday h3 {
+            position: relative;
+            left: 10px;
+            color: rgb(31, 29, 28);
+        }
+
+        .birthday div input {
+            width: 180px;
+            height: 30px;
+            color: black;
+            background: rgb(177, 169, 169);
+            position: relative;
+            left: 15px;
+        }
+
+        .birthday div p {
+            color: blue;
+        }
+
+        .birthday div {
             display: flex;
+            gap: 30px;
         }
-        .new-password input{
-            width: 600px;
-            height: 30px;
+
+        .birthday .gender {
+            position: relative;
+            right: 70px;
+        }
+
+        .birthday .gender {
+            margin: 2px;
+        }
+
+        .birthday .gender label {
+            position: relative;
+            right: 80px;
+            top: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -129,17 +234,23 @@
             </div>
             <div class="birthday">
                 <h3>Birthday</h3>
-                <input type="date" class="birth-day">
-                <p>Why do i need to provide my birthday?</p>
-                <input type="radio" class=" gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" class="gender" value="female">
-                <label for="female">Female</label>
+                <div>
+                    <input type="date" class="birth-day">
+                    <p>Why do i need to provide my <br> birthday?</p>
+                </div>
+                <div class="gender">
+                    <input type="radio" class=" gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" class="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
             </div>
-            <p>By clicking Sigin Up. you agree to our Terms and that you have read our Data policy. <br>  including our cookie
-                Use.</p>
-            <button class="btn">sign up</button>
-            <p>Create a page for a celebrity, band or business.</p>
+        
+         <p>By clicking Sigin Up. you agree to our Terms and that you have read our Data policy. <br> including our
+            cookie
+            Use.</p>
+         <button>sign up</button>
+         <p>Create a page for a celebrity, band or business.</p>
         </div>
     </div>
 </body>
