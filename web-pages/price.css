@@ -104,6 +104,7 @@ p.aj_des {
     font-weight: bold;
 
 }
+
 .features li.icon {
     font-size: 15px;
 }
@@ -120,12 +121,13 @@ p.aj_des {
     left: 90px;
 }
 
-.features p{
+.features p {
     position: relative;
     left: 30px;
     bottom: 15px;
     color: brown;
 }
+
 .table .btn {
     width: 100%;
     display: flex;
@@ -216,18 +218,19 @@ p.aj_des {
         margin: 0px;
     }
 }
- 
-.see h2{
+
+.see h2 {
     position: relative;
     left: 20px;
     top: 20px;
 
 }
+
 ::selection {
     color: #fff;
 }
 
- .ribbon {
+.ribbon {
     width: 150px;
     height: 150px;
     position: absolute;
@@ -243,20 +246,21 @@ p.aj_des {
     z-index: -1;
     display: block;
     border: 7px solid #ba24f0;
-    border-top-color:transparent ;
+    border-top-color: transparent;
     border-left-color: transparent;
 }
 
-.table .table.ribbon::before{
+.table .table.ribbon::before {
     top: 0px;
     right: 15px;
 }
-.table .ribbon::after{
+
+.table .ribbon::after {
     bottom: 15px;
     left: 0px;
 }
 
-.table .ribbon span{
+.table .ribbon span {
     position: absolute;
     top: 30px;
     right: 0;
@@ -270,7 +274,7 @@ p.aj_des {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
 
-.features li{
+.features li {
     display: flex;
     gap: 20px;
     position: relative;
